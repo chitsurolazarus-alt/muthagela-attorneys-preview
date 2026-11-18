@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muthagela Attorneys Inc | Attorneys & Notaries in Emalahleni (Witbank)</title>
+<meta name="description" content="Muthagela Attorneys Inc — accessible, affordable, effective legal services in Emalahleni (Witbank). Estates, conveyancing, family law, litigation, contracts, mining rights and more.">
+<meta name="theme-color" content="#06121C">
+<link rel="icon" href="img/favicon.png">
+<meta property="og:title" content="Muthagela Attorneys Inc">
+<meta property="og:description" content="Accessible | Affordable | Effective — Attorneys & Notaries, Emalahleni.">
+<meta property="og:image" content="img/team-standing.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="icons.js"></script>
+<script>
+  try{const t=localStorage.getItem('ma-theme');document.documentElement.dataset.theme=t||'dark'}catch(e){document.documentElement.dataset.theme='dark'}
+</script>
+<style>
+:root{
+  --navy:#00416A; --navy-2:#002B47; --navy-3:#0A5689; --maroon:#862F30; --maroon-2:#A33B3D;
+  --gold:#C9A961; --ice:#E8F0F6;
+  --bg:#F7F9FB; --bg-2:#FFFFFF; --bg-3:#EEF3F7; --text:#0F1E2B; --muted:#5A6B7A; --line:rgba(0,65,106,.12);
+  --card:#FFFFFF; --shadow:0 20px 50px -20px rgba(0,43,71,.25); --hero-ov:linear-gradient(105deg,rgba(0,30,52,.92) 0%,rgba(0,43,71,.78) 45%,rgba(0,43,71,.25) 100%);
+  --heading:var(--navy); --accent:var(--maroon);
+  --r:18px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+[data-theme="dark"]{
+  --bg:#06121C; --bg-2:#0B1B28; --bg-3:#0F2333; --text:#E6EEF5; --muted:#93A6B8; --line:rgba(160,195,225,.12);
+  --card:#0D2030; --shadow:0 20px 50px -20px rgba(0,0,0,.6); --heading:#EAF2F8; --accent:#D25A5C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;transition:background .4s,color .4s}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{width:min(1200px,92%);margin:auto}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--heading);line-height:1.15;font-weight:700}
+.eyebrow{font-family:Cinzel,serif;letter-spacing:.22em;font-size:.74rem;color:var(--accent);font-weight:600;text-transform:uppercase;display:inline-flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor}
+.sec{padding:110px 0;position:relative}
+.sec-head{max-width:680px;margin-bottom:56px}
+.sec-head.center{text-align:center;margin-inline:auto}
+.sec-head.center .eyebrow::after{content:"";width:28px;height:1.5px;background:currentColor}
+.sec-head h2{font-size:clamp(2.2rem,4.5vw,3.4rem);margin:.6rem 0 1rem}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:all .35s var(--ease);white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--maroon);color:#fff;box-shadow:0 10px 30px -10px rgba(134,47,48,.7)}
+.btn-primary:hover{background:var(--maroon-2);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff;backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-3);transform:translateY(-2px)}
+[data-theme="dark"] .btn-navy{background:#164E78}
+
+/* preview ribbon */
+.ribbon{background:linear-gradient(90deg,var(--maroon),#5e1f20);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 2.5rem;position:relative;z-index:60}
+.rb-short{display:none}@media(max-width:720px){.rb-short{display:inline}}
+.ribbon button{position:absolute;right:.8rem;top:50%;transform:translateY(-50%);opacity:.8}
+
+/* progress */
+#progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--maroon),var(--gold));z-index:100;width:0}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;transition:all .4s var(--ease)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+header.scrolled{background:color-mix(in srgb,var(--bg-2) 82%,transparent);backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 1px 0 var(--line)}
+header:not(.scrolled){position:fixed;width:100%}
+header:not(.scrolled) .brand-text b,header:not(.scrolled) .menu a,header:not(.scrolled) .icon-btn{color:#fff}
+header:not(.scrolled) .brand-text small{color:rgba(255,255,255,.7)}
+.brand{display:flex;align-items:center;gap:.75rem}
+.brand img{height:48px;width:auto}
+.brand-text b{display:block;font-family:Cinzel,serif;font-size:1.02rem;letter-spacing:.06em;color:var(--heading)}
+.brand-text small{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.menu{display:flex;gap:2rem;align-items:center}
+.menu a{font-size:.9rem;font-weight:500;position:relative;opacity:.9}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--maroon);transition:width .3s}
+.menu a:hover::after,.menu a.active::after{width:100%}
+.nav-actions{display:flex;gap:.6rem;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);transition:.3s}
+header:not(.scrolled) .icon-btn{border-color:rgba(255,255,255,.3)}
+.icon-btn:hover{background:var(--bg-3)}
+.icon-btn svg{width:19px;height:19px}
+.burger{display:none}
+.theme-ic-dark{display:none}[data-theme="dark"] .theme-ic-dark{display:block}[data-theme="dark"] .theme-ic-light{display:none}
+
+.drawer{position:fixed;inset:0;z-index:90;pointer-events:none}
+.drawer .scrim{position:absolute;inset:0;background:rgba(0,15,28,.55);opacity:0;transition:.4s}
+.drawer .panel{position:absolute;right:0;top:0;bottom:0;width:min(340px,86%);background:var(--bg-2);padding:2rem 1.6rem;transform:translateX(100%);transition:.45s var(--ease);display:flex;flex-direction:column;gap:.4rem}
+.drawer.open{pointer-events:auto}.drawer.open .scrim{opacity:1}.drawer.open .panel{transform:none}
+.drawer .panel a{padding:.9rem 0;border-bottom:1px solid var(--line);font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--heading)}
+.drawer .panel .btn{margin-top:1.4rem;justify-content:center}
+
+/* hero */
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.slides{position:absolute;inset:0;z-index:-2}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity 1.6s ease,transform 7s linear}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero::before{content:"";position:absolute;inset:0;background:var(--hero-ov);z-index:-1}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:160px;background:linear-gradient(transparent,var(--bg));z-index:-1}
+.hero-inner{padding:140px 0 120px;max-width:720px}
+.hero .eyebrow{color:#E9B4B5}
+.hero h1{color:#fff;font-size:clamp(2.8rem,7vw,5.4rem);margin:1.2rem 0 1.2rem;font-weight:600}
+.hero h1 em{font-style:italic;color:#F2C9A0;font-weight:500}
+.hero p.lead{font-size:clamp(1rem,1.6vw,1.18rem);color:rgba(255,255,255,.85);max-width:560px;margin-bottom:2.2rem}
+.tagline{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.tagline span{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;display:flex;align-items:center;gap:.9rem}
+.tagline span+span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-meta{display:flex;gap:2.4rem;margin-top:3.2rem;flex-wrap:wrap}
+.hero-meta div{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:rgba(255,255,255,.85)}
+.hero-meta svg{width:20px;height:20px;color:var(--gold)}
+.dots{position:absolute;bottom:90px;right:4%;display:flex;gap:.5rem}
+.dots button{width:30px;height:3px;background:rgba(255,255,255,.35);border-radius:2px;transition:.4s}
+.dots button.on{background:#fff;width:52px}
+.open-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .9rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.8rem;backdrop-filter:blur(6px)}
+.open-badge i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.7);animation:pulse 2s infinite}
+.open-badge.closed i{background:#ff6b6b;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+
+/* pillars */
+.pillars{margin-top:-70px;position:relative;z-index:5}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line)}
+.pillar{padding:2.4rem 2.2rem;display:flex;gap:1.2rem;position:relative;transition:.4s}
+.pillar+.pillar{border-left:1px solid var(--line)}
+.pillar:hover{background:var(--bg-3)}
+.pillar .ic{width:54px;height:54px;flex:none;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff}
+.pillar:nth-child(2) .ic{background:linear-gradient(135deg,var(--maroon),var(--maroon-2))}
+.pillar h3{font-size:1.55rem;margin-bottom:.2rem}
+.pillar p{color:var(--muted);font-size:.92rem}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:5rem;align-items:center}
+.about-media{position:relative}
+.about-media .main{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow)}
+.about-media .main img{width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform 1.2s var(--ease)}
+.about-media:hover .main img{transform:scale(1.04)}
+.about-media .float{position:absolute;right:-30px;bottom:-40px;width:55%;border-radius:14px;overflow:hidden;border:6px solid var(--bg);box-shadow:var(--shadow);aspect-ratio:4/3}
+.about-media .float img{width:100%;height:100%;object-fit:cover}
+.about-media .stamp{position:absolute;left:-28px;top:40px;background:var(--card);border-radius:16px;padding:1rem 1.2rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.8rem;border:1px solid var(--line)}
+.about-media .stamp img{width:46px}
+.about-media .stamp b{font-family:Cinzel,serif;font-size:.85rem;color:var(--heading);display:block}
+.about-media .stamp small{color:var(--muted);font-size:.75rem}
+.about-copy p{color:var(--muted);margin-bottom:1.1rem}
+.about-copy blockquote{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-style:italic;color:var(--heading);border-left:3px solid var(--maroon);padding-left:1.3rem;margin:1.8rem 0}
+.sig{display:flex;align-items:center;gap:1rem;margin-top:1.8rem}
+.sig img{width:58px;height:58px;border-radius:50%;object-fit:cover;object-position:center 20%}
+.sig b{display:block;color:var(--heading)}
+.sig small{color:var(--muted)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.6rem 0}
+.checks div{display:flex;gap:.6rem;align-items:center;font-size:.92rem;font-weight:500}
+.checks svg{width:18px;height:18px;color:var(--maroon);flex:none}
+[data-theme="dark"] .checks svg{color:var(--accent)}
+
+/* services */
+.services{background:var(--bg-3)}
+.svc-tools{display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap;margin-bottom:2rem;align-items:center}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap}
+.chip{padding:.55rem 1.1rem;border-radius:999px;border:1px solid var(--line);font-size:.85rem;font-weight:500;background:var(--card);transition:.3s}
+.chip.on,.chip:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search{display:flex;align-items:center;gap:.5rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem 1.1rem;min-width:260px}
+.search input{border:none;background:none;outline:none;color:var(--text);font:inherit;font-size:.9rem;width:100%}
+.search svg{width:17px;color:var(--muted)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.3rem}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.7rem;position:relative;overflow:hidden;transition:all .45s var(--ease);cursor:pointer;display:flex;flex-direction:column}
+.svc::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);opacity:0;transition:.45s}
+.svc>*{position:relative}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.svc:hover::before{opacity:1}
+.svc:hover h3,.svc:hover p,.svc:hover .more{color:#fff}
+.svc:hover .ic{background:rgba(255,255,255,.12);color:#fff}
+.svc .ic{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:var(--ice);color:var(--navy);margin-bottom:1.4rem;transition:.45s}
+[data-theme="dark"] .svc .ic{background:rgba(255,255,255,.06);color:#9CC7E8}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:1.5rem;margin-bottom:.5rem;transition:.3s}
+.svc p{color:var(--muted);font-size:.9rem;flex:1;transition:.3s}
+.svc .more{margin-top:1.3rem;font-size:.85rem;font-weight:600;color:var(--maroon);display:flex;align-items:center;gap:.4rem;transition:.3s}
+[data-theme="dark"] .svc .more{color:var(--accent)}
+.svc .more svg{width:16px;transition:transform .3s}
+.svc:hover .more svg{transform:translateX(5px)}
+.svc .num{position:absolute;top:1.4rem;right:1.6rem;font-family:Cinzel,serif;font-size:.8rem;color:var(--muted);opacity:.5}
+.svc:hover .num{color:#fff}
+.svc.hide{display:none}
+.empty{display:none;text-align:center;color:var(--muted);padding:2rem}
+
+/* band */
+.band{position:relative;padding:120px 0;color:#fff;overflow:hidden;isolation:isolate}
+.band img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,30,52,.94),rgba(134,47,48,.78));z-index:-1}
+.band-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center}
+.band h2{color:#fff;font-size:clamp(2rem,4vw,3.2rem)}
+.band p{color:rgba(255,255,255,.8);margin-top:1rem}
+.band-actions{display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.band-actions a.line{display:flex;align-items:center;gap:1rem;font-size:1.25rem;font-family:'Cormorant Garamond',serif;font-weight:600}
+.band-actions a.line span.ic{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center}
+.band-actions a.line svg{width:20px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:s}
+.step{padding:2rem 1.6rem;border-radius:var(--r);background:var(--card);border:1px solid var(--line);position:relative;transition:.4s}
+.step:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Cinzel,serif;font-size:2.6rem;color:transparent;-webkit-text-stroke:1.2px var(--maroon);display:block;margin-bottom:.8rem;opacity:.75}
+[data-theme="dark"] .step::before{-webkit-text-stroke-color:var(--accent)}
+.step h3{font-size:1.4rem;margin-bottom:.4rem}
+.step p{color:var(--muted);font-size:.9rem}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.member{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:3/4;cursor:pointer;background:var(--bg-3);box-shadow:var(--shadow)}
+.member img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s}
+.member:hover img{transform:scale(1.07)}
+.member .info{position:absolute;inset:auto 0 0 0;padding:1.6rem 1.5rem;background:linear-gradient(transparent,rgba(0,25,45,.95) 60%);color:#fff;transform:translateY(calc(100% - 96px));transition:transform .55s var(--ease)}
+.member:hover .info,.member:focus-within .info{transform:none}
+.member .info h3{color:#fff;font-size:1.55rem}
+.member .info .role{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#F2C9A0;font-weight:600}
+.member .info p{font-size:.86rem;color:rgba(255,255,255,.8);margin:.9rem 0}
+.member .info .tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.member .info .tags span{font-size:.72rem;padding:.25rem .65rem;border-radius:999px;background:rgba(255,255,255,.14)}
+.member.lead{grid-column:span 2;aspect-ratio:auto}
+.member.lead img{object-position:center 25%}
+.member .badge{position:absolute;top:1rem;left:1rem;background:var(--maroon);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:.35rem .8rem;border-radius:999px;text-transform:uppercase}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:1rem}
+.gallery figure{border-radius:14px;overflow:hidden;cursor:zoom-in;position:relative}
+.gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.gallery figure:hover img{transform:scale(1.08)}
+.gallery figure::after{content:"";position:absolute;inset:0;background:rgba(0,43,71,.0);transition:.4s}
+.gallery figure:hover::after{background:rgba(0,43,71,.25)}
+.g1{grid-column:span 2;grid-row:span 2}.g4{grid-column:span 2}
+.lightbox{position:fixed;inset:0;background:rgba(0,10,20,.94);z-index:120;display:none;place-items:center;padding:4%}
+.lightbox.open{display:grid}
+.lightbox img{max-height:86vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lightbox .x,.lightbox .nv{position:absolute;color:#fff;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.lightbox .x{top:20px;right:20px}.lightbox .prev{left:20px}.lightbox .next{right:20px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem}
+.acc{border-bottom:1px solid var(--line)}
+.acc button{width:100%;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--heading)}
+.acc button svg{flex:none;transition:transform .4s;color:var(--maroon)}
+.acc.open button svg{transform:rotate(45deg)}
+.acc .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.acc.open .body{grid-template-rows:1fr}
+.acc .body>div{overflow:hidden;color:var(--muted)}
+.acc .body p{padding-bottom:1.4rem}
+
+/* contact */
+.contact{background:var(--bg-3)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:2rem;align-items:stretch}
+.info-card{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;border-radius:var(--r);padding:2.6rem 2.2rem;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.info-card::after{content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;background:url(img/emblem-light.webp) center/contain no-repeat;opacity:.07}
+.info-card h3{color:#fff;font-size:2rem;margin-bottom:.4rem}
+.info-card>p{color:rgba(255,255,255,.75);margin-bottom:2rem;font-size:.95rem}
+.ci{display:flex;gap:1rem;margin-bottom:1.4rem;align-items:flex-start}
+.ci .ic{width:44px;height:44px;flex:none;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.ci .ic svg{width:19px}
+.ci small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.ci a,.ci span{font-weight:500;font-size:.98rem}
+.ci a:hover{color:#F2C9A0}
+.hours{margin-top:auto;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.15);font-size:.88rem}
+.hours div{display:flex;justify-content:space-between;padding:.25rem 0;color:rgba(255,255,255,.85)}
+.hours div.today{color:#F2C9A0;font-weight:600}
+form.card{background:var(--card);border-radius:var(--r);padding:2.6rem 2.2rem;border:1px solid var(--line);box-shadow:var(--shadow)}
+form h3{font-size:2rem;margin-bottom:.3rem}
+form>p{color:var(--muted);font-size:.92rem;margin-bottom:1.8rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{position:relative;margin-bottom:1rem}
+.field input,.field select,.field textarea{width:100%;padding:1.35rem 1rem .55rem;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:inherit;font-size:.95rem;outline:none;transition:.3s;appearance:none}
+.field textarea{min-height:130px;resize:vertical}
+.field label{position:absolute;left:1rem;top:.95rem;color:var(--muted);font-size:.92rem;pointer-events:none;transition:.25s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy-3);box-shadow:0 0 0 4px rgba(10,86,137,.12)}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label,.field select+label{top:.4rem;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-3);font-weight:600}
+[data-theme="dark"] .field input:focus+label,[data-theme="dark"] .field input:not(:placeholder-shown)+label,[data-theme="dark"] .field textarea:focus+label,[data-theme="dark"] .field textarea:not(:placeholder-shown)+label,[data-theme="dark"] .field select+label{color:#9CC7E8}
+.field.sel::after{content:"";position:absolute;right:1.1rem;top:50%;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.field.err input,.field.err select,.field.err textarea{border-color:#d9534f}
+.consent{display:flex;gap:.6rem;font-size:.8rem;color:var(--muted);margin:.4rem 0 1.4rem;align-items:flex-start}
+.consent input{margin-top:.25rem;accent-color:var(--maroon)}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.form-foot small{color:var(--muted);font-size:.78rem;display:flex;gap:.4rem;align-items:center}
+.form-foot small svg{width:14px}
+.map{margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:340px}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.2)}
+[data-theme="dark"] .map iframe{filter:invert(.9) hue-rotate(180deg) grayscale(.3)}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:110;display:none;place-items:center;padding:1rem}
+.modal.open{display:grid}
+.modal .scrim{position:absolute;inset:0;background:rgba(0,15,28,.6);backdrop-filter:blur(4px)}
+.modal .box{position:relative;background:var(--bg-2);border-radius:22px;padding:2.2rem;max-width:460px;width:100%;box-shadow:0 40px 100px -20px rgba(0,0,0,.5);animation:pop .45s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.96)}}
+.modal .box h3{font-size:1.9rem;margin-bottom:.3rem}
+.modal .box>p{color:var(--muted);font-size:.92rem;margin-bottom:1.5rem}
+.send-opts{display:grid;gap:.75rem}
+.send-opts button{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:14px;border:1.5px solid var(--line);text-align:left;transition:.3s;background:var(--card)}
+.send-opts button:hover{border-color:var(--navy-3);transform:translateX(4px)}
+.send-opts .lg{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none}
+.send-opts b{display:block;font-size:.98rem}
+.send-opts small{color:var(--muted);font-size:.8rem}
+.modal .close{position:absolute;top:1rem;right:1rem}
+.svc-modal .box{max-width:560px}
+.svc-modal .ic{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;background:var(--ice);color:var(--navy);margin-bottom:1rem}
+[data-theme="dark"] .svc-modal .ic{background:rgba(255,255,255,.06);color:#9CC7E8}
+.svc-modal ul{list-style:none;margin:1rem 0 1.6rem;display:grid;gap:.55rem}
+.svc-modal li{display:flex;gap:.6rem;font-size:.92rem}
+.svc-modal li svg{width:17px;color:var(--maroon);flex:none;margin-top:3px}
+
+/* footer */
+footer{background:var(--navy-2);color:rgba(255,255,255,.75);padding:80px 0 30px}
+[data-theme="dark"] footer{background:#030B12}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:3rem}
+footer h4{font-family:Cinzel,serif;color:#fff;font-size:.85rem;letter-spacing:.16em;margin-bottom:1.2rem}
+footer ul{list-style:none;display:grid;gap:.6rem;font-size:.9rem}
+footer a:hover{color:#fff}
+.foot-brand img{height:64px;margin-bottom:1rem}
+.foot-brand p{font-size:.9rem;max-width:300px}
+.foot-bottom{margin-top:60px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.8rem}
+.disclaimer{font-size:.78rem;opacity:.6;margin-top:1rem;max-width:760px}
+
+/* floating */
+.fab{position:fixed;right:22px;bottom:22px;z-index:70;display:flex;flex-direction:column;gap:.7rem;align-items:flex-end}
+.fab a,.fab button{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 12px 30px -8px rgba(0,0,0,.4);transition:.3s}
+.fab .wa{background:#25D366}
+.fab .wa:hover{transform:scale(1.08)}
+.fab .top{background:var(--navy);width:46px;height:46px;opacity:0;pointer-events:none;transform:translateY(10px)}
+.fab .top.show{opacity:1;pointer-events:auto;transform:none}
+.fab svg{width:24px;height:24px}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,120px);background:var(--navy);color:#fff;padding:.9rem 1.4rem;border-radius:12px;z-index:130;transition:.5s var(--ease);font-size:.9rem;display:flex;gap:.6rem;align-items:center;box-shadow:var(--shadow)}
+.toast.show{transform:translate(-50%,0)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* loader */
+#loader{position:fixed;inset:0;background:var(--navy-2);z-index:200;display:grid;place-items:center;transition:opacity .7s,visibility .7s}
+#loader.done{opacity:0;visibility:hidden}
+#loader img{width:120px;animation:lg 1.6s ease-in-out infinite}
+#loader .bar{width:160px;height:2px;background:rgba(255,255,255,.15);margin-top:1.4rem;overflow:hidden;border-radius:2px}
+#loader .bar i{display:block;height:100%;width:40%;background:var(--maroon-2);animation:ld 1.1s ease-in-out infinite}
+@keyframes ld{from{transform:translateX(-100%)}to{transform:translateX(260%)}}
+@keyframes lg{50%{transform:scale(1.06)}}
+
+@media (max-width:1024px){
+  .menu{display:none}.burger{display:grid}
+  .about-grid,.faq-grid,.contact-grid,.band-grid{grid-template-columns:1fr;gap:3rem}
+  .steps{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .about-media{max-width:560px}
+}
+@media (max-width:720px){
+  .rb-long{display:none}.ribbon{font-size:.72rem}
+  .hero-inner{padding:180px 0 120px}
+  .sec{padding:80px 0}
+  .pillar-grid{grid-template-columns:1fr}.pillar+.pillar{border-left:none;border-top:1px solid var(--line)}
+  .pillar{padding:1.6rem}
+  .steps,.team-grid,.row,.foot-grid{grid-template-columns:1fr}
+  .member.lead{grid-column:auto;aspect-ratio:3/4}
+  .member .info{transform:none}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .g1{grid-column:span 2}.g4{grid-column:span 2}
+  .about-media .float{right:-6px;bottom:-30px}
+  .about-media .stamp{left:-6px;top:20px}
+  .checks{grid-template-columns:1fr}
+  .nav-actions .btn{display:none}
+  .brand-text small{display:none}
+  .brand img{height:42px}
+  .hero-meta{gap:1.2rem}
+  .dots{bottom:110px;left:4%;right:auto}
+  .search{min-width:0;width:100%}
+  form.card,.info-card{padding:2rem 1.4rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="loader"><div style="display:grid;justify-items:center"><img src="img/emblem-light.webp" alt=""><div class="bar"><i></i></div></div></div>
+<div id="progress"></div>
+
+
+<header id="hdr">
+  <div class="ribbon" id="ribbon">✨ Website preview by L.C Digital Solution WebCraft Studios. <span class="rb-long">Team names and bios are placeholders.</span><span class="rb-short">Names are placeholders.</span> <button aria-label="Dismiss" onclick="this.parentElement.remove()">✕</button></div>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Muthagela Attorneys Inc home">
+      <img src="img/emblem.webp" alt="Muthagela Attorneys emblem" id="brandLogo">
+      <div class="brand-text"><b>MUTHAGELA</b><small>Attorneys · Notaries</small></div>
+    </a>
+    <nav class="menu">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#team">Our Team</a><a href="#process">How We Work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle light/dark theme"><i data-lucide="moon" class="theme-ic-light"></i><i data-lucide="sun" class="theme-ic-dark"></i></button>
+      <a href="#contact" class="btn btn-primary">Book Consultation</a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="scrim" data-close></div>
+  <div class="panel">
+    <button class="icon-btn" data-close style="align-self:flex-end;margin-bottom:1rem" aria-label="Close menu"><i data-lucide="x"></i></button>
+    <a href="#about" data-close>About</a><a href="#services" data-close>Services</a><a href="#team" data-close>Our Team</a><a href="#process" data-close>How We Work</a><a href="#faq" data-close>FAQ</a><a href="#contact" data-close>Contact</a>
+    <a href="#contact" class="btn btn-primary" data-close style="font-family:Inter;font-size:1rem;color:#fff;border:none">Book a Consultation</a>
+  </div>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="slides" id="slides">
+    <img src="img/team-standing.webp" alt="The Muthagela Attorneys team" class="on">
+    <img src="img/charlotte-desk.webp" alt="Director at her desk">
+    <img src="img/entrance.webp" alt="Muthagela Attorneys office entrance, Emalahleni">
+    <img src="img/team-seated.webp" alt="Attorneys in the firm's library">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="open-badge" id="openBadge"><i></i><span>Checking office hours…</span></span>
+      <h1 class="rv">Legal counsel you can <em>trust</em>, right here in Emalahleni.</h1>
+      <div class="tagline rv d1"><span>accessible</span><span>affordable</span><span>effective</span></div>
+      <p class="lead rv d2">Muthagela Attorneys Inc is a team of attorneys and notaries serving individuals, families, businesses and communities across Mpumalanga, from estates and conveyancing to litigation, family law and mining rights.</p>
+      <div class="hero-ctas rv d3">
+        <a href="#contact" class="btn btn-primary"><i data-lucide="calendar-check"></i>Book a Consultation</a>
+        <a href="#services" class="btn btn-ghost"><i data-lucide="scale"></i>Our Practice Areas</a>
+      </div>
+      <div class="hero-meta rv d3">
+        <div><i data-lucide="map-pin"></i>Christiaan De Wet St, Emalahleni</div>
+        <div><i data-lucide="phone"></i><a href="tel:+27787451163">+27 78 745 1163</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillar-grid rv">
+      <div class="pillar"><div class="ic"><i data-lucide="door-open"></i></div><div><h3>Accessible</h3><p>Plain-language advice, a WhatsApp line and an office that's easy to reach in town.</p></div></div>
+      <div class="pillar"><div class="ic"><i data-lucide="hand-coins"></i></div><div><h3>Affordable</h3><p>Clear fee discussions up front, so you know where you stand before we begin.</p></div></div>
+      <div class="pillar"><div class="ic"><i data-lucide="target"></i></div><div><h3>Effective</h3><p>Focused, practical legal work aimed at resolving your matter efficiently.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media rv">
+      <div class="main"><img src="img/charlotte-portrait.webp" alt="Ndivhuwo Charlotte Muthagela, Director" loading="lazy"></div>
+      <div class="float"><img src="img/entrance.webp" alt="Front entrance of Muthagela Attorneys Inc, Emalahleni" loading="lazy" style="object-position:center 55%"></div>
+      <div class="stamp"><img src="img/emblem.webp" alt="" id="stampLogo"><div><b>Attorneys & Notaries</b><small>Emalahleni, Mpumalanga</small></div></div>
+    </div>
+    <div class="about-copy rv d1">
+      <span class="eyebrow">About the Firm</span>
+      <h2 style="font-size:clamp(2.2rem,4.5vw,3.4rem);margin:.6rem 0 1.2rem">A modern law firm with a deep commitment to community.</h2>
+      <p>Founded and led by Director <b>Ndivhuwo Charlotte Muthagela</b>, Muthagela Attorneys Inc was built on a simple belief: quality legal representation should be within reach of everyone, not just a few.</p>
+      <p>From our offices on Christiaan De Wet Street, our team of attorneys and notaries assists clients with everything from drafting a will or an ante-nuptial contract to complex commercial, municipal and mining matters.</p>
+      <blockquote>“Every client deserves to be heard, understood and properly represented.”</blockquote>
+      <div class="checks">
+        <div><i data-lucide="check-circle-2"></i>Attorneys & Notaries</div>
+        <div><i data-lucide="check-circle-2"></i>Consultations in-office or by appointment</div>
+        <div><i data-lucide="check-circle-2"></i>Individuals, families & businesses</div>
+        <div><i data-lucide="check-circle-2"></i>Clear communication throughout</div>
+      </div>
+      <div class="sig">
+        <img src="img/charlotte-portrait.webp" alt="">
+        <div><b>Ndivhuwo Charlotte Muthagela</b><small>Director, Muthagela Attorneys Inc</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec services" id="services">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Practice Areas</span>
+      <h2>How we can help you</h2>
+      <p>Tap any practice area to learn more, then book a consultation with the right attorney in one step.</p>
+    </div>
+    <div class="svc-tools rv">
+      <div class="chips" id="chips">
+        <button class="chip on" data-f="all">All</button>
+        <button class="chip" data-f="personal">Personal & Family</button>
+        <button class="chip" data-f="property">Property & Estates</button>
+        <button class="chip" data-f="business">Business</button>
+        <button class="chip" data-f="litigation">Litigation</button>
+      </div>
+      <label class="search"><i data-lucide="search"></i><input id="svcSearch" placeholder="Search services…" aria-label="Search services"></label>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+    <p class="empty" id="svcEmpty">No matching service. Contact us anyway and we'll point you in the right direction.</p>
+  </div>
+</section>
+
+<section class="band">
+  <img class="bg" src="img/street.webp" alt="" loading="lazy">
+  <div class="wrap band-grid">
+    <div class="rv">
+      <span class="eyebrow" style="color:#F2C9A0">Need legal help today?</span>
+      <h2 style="margin-top:.8rem">Speak to an attorney. We'll guide you through your next steps.</h2>
+      <p>Call, WhatsApp or send us a message. Our team will get back to you as soon as possible.</p>
+    </div>
+    <div class="band-actions rv d1">
+      <a class="line" href="tel:+27787451163"><span class="ic"><i data-lucide="phone-call"></i></span>+27 78 745 1163</a>
+      <a class="line" href="https://wa.me/27750341875" target="_blank" rel="noopener"><span class="ic"><i data-lucide="message-circle"></i></span>WhatsApp +27 75 034 1875</a>
+      <a class="line" href="tel:+27131706260"><span class="ic"><i data-lucide="building-2"></i></span>Office +27 13 170 6260</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">How We Work</span>
+      <h2>A clear path from first call to resolution</h2>
+      <p>No confusing jargon. Here's what to expect when you work with us.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Reach Out</h3><p>Contact us by phone, WhatsApp or the enquiry form with a short description of your matter.</p></div>
+      <div class="step rv d1"><h3>Consultation</h3><p>Meet with an attorney to discuss your situation, options and the documents you'll need.</p></div>
+      <div class="step rv d2"><h3>Clear Plan</h3><p>We explain the way forward, timelines and fees, so you can decide with confidence.</p></div>
+      <div class="step rv d3"><h3>We Act</h3><p>Your attorney handles the matter and keeps you updated at every important stage.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="team" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Our People</span>
+      <h2>Meet the team</h2>
+      <p>Dedicated professionals who bring care, preparation and integrity to every matter.</p>
+    </div>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Our Offices</span>
+      <h2>Visit us in Emalahleni</h2>
+    </div>
+    <div class="gallery rv" id="gallery">
+      <figure class="g1"><img src="img/team-seated.webp" alt="The team in the boardroom" loading="lazy"></figure>
+      <figure><img src="img/entrance.webp" alt="Office entrance" loading="lazy"></figure>
+      <figure><img src="img/building.webp" alt="Office building" loading="lazy"></figure>
+      <figure class="g4"><img src="img/street.webp" alt="Street view of the offices" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="padding-top:40px">
+  <div class="wrap faq-grid">
+    <div class="sec-head rv" style="margin:0">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions clients often ask</h2>
+      <p>Can't find your answer? Send us a WhatsApp and we'll be glad to help.</p>
+      <a href="https://wa.me/27750341875" target="_blank" rel="noopener" class="btn btn-navy" style="margin-top:1.4rem"><i data-lucide="message-circle"></i>Ask on WhatsApp</a>
+    </div>
+    <div class="rv d1" id="faqList"></div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Book a consultation</h2>
+      <p>Fill in the form and it opens in your email app (Gmail, Outlook or Mail), ready to send to our team.</p>
+    </div>
+    <div class="contact-grid">
+      <aside class="info-card rv">
+        <h3>Get in touch</h3>
+        <p>We're here to help. Reach us through whichever channel suits you best.</p>
+        <div class="ci"><span class="ic"><i data-lucide="map-pin"></i></span><div><small>Visit</small><span>Office No. 12, Christiaan De Wet Street<br>Emalahleni, 1035</span></div></div>
+        <div class="ci"><span class="ic"><i data-lucide="phone"></i></span><div><small>Call</small><a href="tel:+27787451163">+27 78 745 1163</a><br><a href="tel:+27131706260">+27 13 170 6260</a></div></div>
+        <div class="ci"><span class="ic"><i data-lucide="message-circle"></i></span><div><small>WhatsApp</small><a href="https://wa.me/27750341875" target="_blank" rel="noopener">+27 75 034 1875</a></div></div>
+        <div class="ci"><span class="ic"><i data-lucide="mail"></i></span><div><small>Email</small><a href="mailto:info@muthagelaattorneys.co.za">info@muthagelaattorneys.co.za</a></div></div>
+        <div class="hours" id="hours"></div>
+      </aside>
+
+      <form class="card rv d1" id="enquiry" novalidate>
+        <h3>Send an enquiry</h3>
+        <p>All information is treated as confidential.</p>
+        <div class="row">
+          <div class="field"><input id="fName" placeholder=" " required><label for="fName">Full name *</label></div>
+          <div class="field"><input id="fPhone" type="tel" placeholder=" " required><label for="fPhone">Phone number *</label></div>
+        </div>
+        <div class="row">
+          <div class="field"><input id="fEmail" type="email" placeholder=" "><label for="fEmail">Email (optional)</label></div>
+          <div class="field sel"><select id="fService" required><option value="">Select…</option></select><label for="fService">Service needed *</label></div>
+        </div>
+        <div class="row">
+          <div class="field sel"><select id="fContact"><option>Phone call</option><option>WhatsApp</option><option>Email</option></select><label for="fContact">Preferred contact</label></div>
+          <div class="field"><input id="fDate" type="date" placeholder=" "><label for="fDate">Preferred date</label></div>
+        </div>
+        <div class="field"><textarea id="fMsg" placeholder=" " required></textarea><label for="fMsg">Briefly describe your matter *</label></div>
+        <label class="consent"><input type="checkbox" id="fConsent" required> I agree that Muthagela Attorneys may contact me about my enquiry. Submitting this form does not create an attorney–client relationship.</label>
+        <div class="form-foot">
+          <small><i data-lucide="lock"></i>Opens your email app, nothing is stored online</small>
+          <button class="btn btn-primary" type="submit"><i data-lucide="send"></i>Send Enquiry</button>
+        </div>
+      </form>
+    </div>
+    <div class="map rv"><iframe loading="lazy" title="Map to Muthagela Attorneys" src="https://www.google.com/maps?q=Christiaan+De+Wet+Street,+Emalahleni,+1035&output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="img/emblem-light.webp" alt="Muthagela Attorneys emblem">
+        <h4 style="margin-bottom:.4rem">MUTHAGELA ATTORNEYS INC</h4>
+        <p><i style="font-family:'Cormorant Garamond',serif;font-size:1.1rem">accessible | affordable | effective</i><br>Attorneys · Notaries, Emalahleni.</p>
+      </div>
+      <div><h4>FIRM</h4><ul><li><a href="#about">About Us</a></li><li><a href="#team">Our Team</a></li><li><a href="#process">How We Work</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>SERVICES</h4><ul id="footSvc"></ul></div>
+      <div><h4>CONTACT</h4><ul><li>Office No. 12, Christiaan De Wet St, Emalahleni 1035</li><li><a href="tel:+27787451163">+27 78 745 1163</a></li><li><a href="tel:+27131706260">+27 13 170 6260</a></li><li><a href="mailto:info@muthagelaattorneys.co.za">info@muthagelaattorneys.co.za</a></li></ul></div>
+    </div>
+    <p class="disclaimer">The information on this website is general in nature and does not constitute legal advice. Please consult an attorney regarding your specific circumstances.</p>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Muthagela Attorneys Inc. All rights reserved.</span>
+      <span>Website by <a href="https://lcdigitalsolution.co.za" target="_blank" rel="noopener" style="color:#fff">L.C Digital Solution WebCraft Studios</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab">
+  <button class="top" id="toTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+  <a class="wa" href="https://wa.me/27750341875?text=Hello%20Muthagela%20Attorneys%2C%20I%20would%20like%20to%20enquire%20about%20" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.44-9.44 9.44m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.06c0 2 .52 3.96 1.52 5.68L.58 23.7l6.1-1.6a11.33 11.33 0 0 0 5.37 1.37h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg></a>
+</div>
+
+<div class="modal" id="sendModal" role="dialog" aria-modal="true" aria-labelledby="smT">
+  <div class="scrim" data-mclose></div>
+  <div class="box">
+    <button class="icon-btn close" data-mclose aria-label="Close"><i data-lucide="x"></i></button>
+    <h3 id="smT">Almost done</h3>
+    <p>Your message is ready. Choose how you'd like to send it. It opens with everything already filled in, so you just tap <b>Send</b>.</p>
+    <div class="send-opts">
+      <button data-send="gmail"><span class="lg" style="background:#fdecea"><svg viewBox="0 0 48 48" width="26"><path fill="#4caf50" d="M45 16.2l-5 2.75-5 4.75V40h7a3 3 0 0 0 3-3V16.2z"/><path fill="#1e88e5" d="M3 16.2l3.61 1.71L13 23.7V40H6a3 3 0 0 1-3-3V16.2z"/><path fill="#e53935" d="M35 11.2L24 19.45 13 11.2l-1 5.8 1 6.7 11 8.25 11-8.25 1-6.7z"/><path fill="#c62828" d="M3 12.3v3.9l10 7.5V11.2L9.88 8.86A4.07 4.07 0 0 0 3 12.3z"/><path fill="#fbc02d" d="M45 12.3v3.9l-10 7.5V11.2l3.12-2.34A4.07 4.07 0 0 1 45 12.3z"/></svg></span><div><b>Send with Gmail</b><small>Opens the Gmail app or Gmail in your browser</small></div></button>
+      <button data-send="mail"><span class="lg" style="background:var(--ice);color:var(--navy)"><i data-lucide="mail"></i></span><div><b>Other email app</b><small>Apple Mail, Outlook or your default app</small></div></button>
+      <button data-send="wa"><span class="lg" style="background:#e7f8ee;color:#25D366"><i data-lucide="message-circle"></i></span><div><b>Send via WhatsApp</b><small>Message us on +27 75 034 1875</small></div></button>
+      <button data-send="copy"><span class="lg" style="background:var(--bg-3)"><i data-lucide="copy"></i></span><div><b>Copy message</b><small>Paste it anywhere you like</small></div></button>
+    </div>
+  </div>
+</div>
+
+<div class="modal svc-modal" id="svcModal" role="dialog" aria-modal="true">
+  <div class="scrim" data-mclose></div>
+  <div class="box">
+    <button class="icon-btn close" data-mclose aria-label="Close"><i data-lucide="x"></i></button>
+    <div id="svcModalBody"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="x" aria-label="Close"><i data-lucide="x"></i></button>
+  <button class="nv prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+  <img alt="">
+  <button class="nv next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+</div>
+<div class="toast" id="toast"><i data-lucide="check-circle-2"></i><span></span></div>
+
+<script>
+const FIRM_EMAIL='info@muthagelaattorneys.co.za', WA='27750341875';
+const SERVICES=[
+ {t:'Administration of Estates',c:'property',i:'scroll-text',d:'Guidance for families through the winding-up of a deceased estate, from reporting to the Master to final distribution.',p:['Reporting estates to the Master of the High Court','Executor support & letters of authority','Liquidation & distribution accounts','Drafting of wills']},
+ {t:'Criminal & Civil Litigation',c:'litigation',i:'gavel',d:'Representation in criminal and civil matters, from bail applications and trials to claims and debt disputes.',p:['Bail applications & criminal defence','Civil claims & defended actions','Debt recovery','Urgent applications']},
+ {t:'Ante-Nuptial Contracts',c:'personal',i:'heart-handshake',d:'Protect both partners before marriage with a properly drafted and registered ANC, with or without accrual.',p:['ANC with or without accrual','Consultations for both partners','Notarial execution','Registration at the Deeds Office']},
+ {t:'Municipal Governance',c:'business',i:'landmark',d:'Advice on municipal law, compliance, by-laws, disputes and governance matters for municipalities and residents.',p:['Municipal compliance & by-laws','Governance advice','Disputes with municipalities','Policy review']},
+ {t:'Commercial Law',c:'business',i:'briefcase',d:'Practical legal support for businesses, from setting up and agreements to compliance and disputes.',p:['Company & partnership matters','Shareholder agreements','Business compliance','Commercial disputes']},
+ {t:'Drafting of Contracts',c:'business',i:'file-signature',d:'Clear, enforceable contracts drafted or reviewed to protect your interests.',p:['Lease & sale agreements','Service level agreements','Employment contracts','Contract review & amendments']},
+ {t:'Conveyancing',c:'property',i:'home',d:'Registration of property transfers and bonds, handled carefully from offer to purchase through to registration.',p:['Property transfers','Bond registrations & cancellations','Sectional title matters','Offer to purchase guidance']},
+ {t:'Family Law',c:'personal',i:'users',d:'Sensitive, practical support for matters involving children, maintenance and family relationships.',p:['Maintenance matters','Parental rights & responsibilities','Protection orders','Mediation support']},
+ {t:'Customary Law',c:'personal',i:'tree-deciduous',d:'Advice on customary marriages, succession and related matters, with respect for tradition and the law.',p:['Customary marriage registration','Customary succession','Lobola & related disputes','Traditional leadership matters']},
+ {t:'Mining Rights',c:'business',i:'pickaxe',d:'Legal support on mining and prospecting rights, regulatory compliance and community matters in a mining region.',p:['Prospecting & mining right applications','Regulatory compliance','Community & surface-rights matters','Transactions involving mining rights']},
+ {t:'Divorce Matters',c:'personal',i:'split',d:'Guidance through contested and uncontested divorces, including settlement agreements and division of assets.',p:['Uncontested divorces','Contested divorces','Settlement agreements','Division of assets & pension interests']},
+ {t:'Third Party Claims',c:'litigation',i:'car-front',d:'Assistance with claims for injuries sustained in motor vehicle accidents, including RAF claims.',p:['Road Accident Fund (RAF) claims','Personal injury claims','Loss of support claims','Gathering medical & accident records']}
+];
+const TEAM=[
+ {n:'Ndivhuwo Charlotte Muthagela',r:'Director',img:'charlotte-desk.webp',lead:true,b:'Founder and Director of Muthagela Attorneys Inc. Charlotte leads the firm with a commitment to making quality legal services accessible to every client.',t:['Litigation','Estates','Family Law']},
+ {n:'Tshepo Mabena',r:'Associate Attorney',img:'att-m.webp',pos:'center 20%',b:'Focuses on criminal and civil litigation, representing clients in the Magistrate’s and High Courts.',t:['Criminal Law','Civil Litigation']},
+ {n:'Lerato Mokoena',r:'Associate Attorney',img:'att-a.webp',b:'Assists clients with commercial matters and the drafting and review of contracts.',t:['Commercial','Contracts']},
+ {n:'Thandeka Mahlangu',r:'Conveyancer',img:'att-b.webp',b:'Handles property transfers, bond registrations and ante-nuptial contracts.',t:['Conveyancing','ANCs']},
+ {n:'Palesa Nkosi',r:'Senior Associate',img:'att-c.webp',pos:'center 18%',b:'Advises on family law, divorce and customary law matters with care and sensitivity.',t:['Family Law','Divorce','Customary Law']},
+ {n:'Refilwe Masilela',r:'Candidate Attorney',img:'att-d.webp',b:'Supports the team on third party claims, estates and municipal governance matters.',t:['RAF Claims','Estates']}
+];
+const FAQ=[
+ ['Do I need an appointment for a consultation?','We recommend booking ahead so the right attorney is available for you. Use the enquiry form, call us or send a WhatsApp to arrange a time.'],
+ ['What should I bring to my first consultation?','Bring your ID and any documents related to your matter, such as contracts, court papers, letters, title deeds or death certificates. If you’re unsure, ask us when you book.'],
+ ['How are your fees structured?','Fees depend on the type and complexity of your matter. We discuss fees openly at the start so there are no surprises.'],
+ ['Do you assist clients outside Emalahleni?','Yes. While our office is in Emalahleni (Witbank), we assist clients across Mpumalanga and beyond, depending on the matter.'],
+ ['How long does a property transfer take?','A typical transfer can take around two to three months, depending on bond approvals, municipal clearance and the Deeds Office. We’ll keep you updated throughout.'],
+ ['Can you help me draft a will?','Absolutely. A properly drafted will protects your loved ones and makes the administration of your estate much easier.']
+];
+// office hours (placeholder: confirm with client). 0=Sun
+const HOURS={1:[8,16.5],2:[8,16.5],3:[8,16.5],4:[8,16.5],5:[8,15.5]};
+const DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+// render services
+const grid=$('#svcGrid'), sel=$('#fService'), fs=$('#footSvc');
+SERVICES.forEach((s,k)=>{
+  grid.insertAdjacentHTML('beforeend',`<article class="svc rv" data-c="${s.c}" data-k="${k}" tabindex="0"><span class="num">${String(k+1).padStart(2,'0')}</span><div class="ic"><i data-lucide="${s.i}"></i></div><h3>${s.t}</h3><p>${s.d}</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></article>`);
+  sel.insertAdjacentHTML('beforeend',`<option>${s.t}</option>`);
+  if(k<6) fs.insertAdjacentHTML('beforeend',`<li><a href="#services">${s.t}</a></li>`);
+});
+sel.insertAdjacentHTML('beforeend','<option>Other / Not sure</option>');
+// team
+TEAM.forEach(m=>{
+  $('#teamGrid').insertAdjacentHTML('beforeend',`<article class="member rv ${m.lead?'lead':''}" tabindex="0">${m.lead?'<span class="badge">Director</span>':''}<img src="img/${m.img}" alt="${m.n}, ${m.r}" loading="lazy" style="object-position:${m.pos||'center 25%'}"><div class="info"><span class="role">${m.r}</span><h3>${m.n}</h3><p>${m.b}</p><div class="tags">${m.t.map(x=>`<span>${x}</span>`).join('')}</div></div></article>`);
+});
+// faq
+FAQ.forEach(([q,a],k)=>$('#faqList').insertAdjacentHTML('beforeend',`<div class="acc ${k==0?'open':''}"><button aria-expanded="${k==0}">${q}<i data-lucide="plus"></i></button><div class="body"><div><p>${a}</p></div></div></div>`));
+$$('.acc button').forEach(b=>b.onclick=()=>{const a=b.parentElement,o=a.classList.contains('open');$$('.acc').forEach(x=>{x.classList.remove('open');x.querySelector('button').setAttribute('aria-expanded','false')});if(!o){a.classList.add('open');b.setAttribute('aria-expanded','true')}});
+// hours
+(function(){
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Johannesburg'}));
+  const d=now.getDay(),h=now.getHours()+now.getMinutes()/60,fmt=x=>`${String(Math.floor(x)).padStart(2,'0')}:${x%1?'30':'00'}`;
+  let html='';[1,2,3,4,5,6,0].forEach(i=>{html+=`<div class="${i==d?'today':''}"><span>${DAYS[i]}</span><span>${HOURS[i]?fmt(HOURS[i][0])+' – '+fmt(HOURS[i][1]):'Closed'}</span></div>`});
+  $('#hours').innerHTML=html;
+  const o=HOURS[d]&&h>=HOURS[d][0]&&h<HOURS[d][1], b=$('#openBadge');
+  b.querySelector('span').textContent=o?`Open now · until ${fmt(HOURS[d][1])}`:'Closed now · Send us a message anytime';
+  if(!o)b.classList.add('closed');
+})();
+lucide.createIcons();
+
+// loader
+addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('done'),350));
+setTimeout(()=>$('#loader').classList.add('done'),2500);
+
+// theme
+const setLogos=()=>{const dk=document.documentElement.dataset.theme==='dark';$('#stampLogo').src=dk?'img/emblem-light.webp':'img/emblem.webp';updHdr()};
+$('#themeBtn').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;try{localStorage.setItem('ma-theme',t)}catch(e){}setLogos()};
+
+// header + progress
+const hdr=$('#hdr');
+function updHdr(){const s=scrollY>60;hdr.classList.toggle('scrolled',s);const dk=document.documentElement.dataset.theme==='dark';$('#brandLogo').src=(!s||dk)?'img/emblem-light.webp':'img/emblem.webp'}
+addEventListener('scroll',()=>{updHdr();const h=document.documentElement;$('#progress').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%';$('#toTop').classList.toggle('show',scrollY>700)},{passive:true});
+setLogos();
+$('#toTop').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+// active menu
+const secs=['about','services','team','process','faq','contact'].map(id=>document.getElementById(id));
+const mio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('.menu a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>mio.observe(s));
+
+// drawer
+const dr=$('#drawer');$('#burger').onclick=()=>dr.classList.add('open');$$('#drawer [data-close]').forEach(x=>x.addEventListener('click',()=>dr.classList.remove('open')));
+
+// slideshow
+const imgs=$$('#slides img');let si=0;
+imgs.forEach((_,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Slide '+(k+1));b.onclick=()=>go(k);$('#dots').appendChild(b)});
+function go(k){imgs[si].classList.remove('on');$$('#dots button')[si].classList.remove('on');si=k;imgs[si].classList.add('on');$$('#dots button')[si].classList.add('on')}
+go(0);setInterval(()=>go((si+1)%imgs.length),6000);
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+
+// service filter/search
+let cf='all';
+function filt(){const q=$('#svcSearch').value.toLowerCase();let n=0;$$('.svc').forEach(el=>{const s=SERVICES[el.dataset.k];const ok=(cf==='all'||s.c===cf)&&(s.t+s.d+s.p.join(' ')).toLowerCase().includes(q);el.classList.toggle('hide',!ok);if(ok){n++;el.classList.add('in')}});$('#svcEmpty').style.display=n?'none':'block'}
+$$('.chip').forEach(c=>c.onclick=()=>{$$('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');cf=c.dataset.f;filt()});
+$('#svcSearch').oninput=filt;
+
+// modals
+const openM=m=>{m.classList.add('open');document.body.style.overflow='hidden'}, closeM=m=>{m.classList.remove('open');document.body.style.overflow=''};
+$$('[data-mclose]').forEach(x=>x.addEventListener('click',()=>closeM(x.closest('.modal'))));
+addEventListener('keydown',e=>{if(e.key==='Escape'){$$('.modal.open').forEach(closeM);$('#lightbox').classList.remove('open')}});
+function showSvc(k){const s=SERVICES[k];$('#svcModalBody').innerHTML=`<div class="ic"><i data-lucide="${s.i}"></i></div><span class="eyebrow">Practice Area</span><h3 style="margin-top:.4rem">${s.t}</h3><p style="color:var(--muted);margin-top:.6rem">${s.d}</p><ul>${s.p.map(x=>`<li><i data-lucide="check"></i>${x}</li>`).join('')}</ul><button class="btn btn-primary" id="svcBook"><i data-lucide="calendar-check"></i>Book a consultation</button>`;lucide.createIcons();openM($('#svcModal'));$('#svcBook').onclick=()=>{closeM($('#svcModal'));$('#fService').value=s.t;$('#contact').scrollIntoView({behavior:'smooth'});setTimeout(()=>$('#fName').focus({preventScroll:true}),800)}}
+$$('.svc').forEach(el=>{el.onclick=()=>showSvc(el.dataset.k);el.onkeydown=e=>{if(e.key==='Enter')showSvc(el.dataset.k)}});
+
+// lightbox
+const gl=$$('#gallery img'),lb=$('#lightbox');let li=0;
+const showL=k=>{li=(k+gl.length)%gl.length;lb.querySelector('img').src=gl[li].src;lb.classList.add('open')};
+gl.forEach((im,k)=>im.parentElement.onclick=()=>showL(k));
+lb.querySelector('.x').onclick=()=>lb.classList.remove('open');lb.querySelector('.prev').onclick=()=>showL(li-1);lb.querySelector('.next').onclick=()=>showL(li+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
+
+// toast
+function toast(t){const el=$('#toast');el.querySelector('span').textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),3200)}
+
+// enquiry -> email app
+let MSG={};
+$('#enquiry').addEventListener('submit',e=>{
+  e.preventDefault();
+  let ok=true;
+  ['fName','fPhone','fService','fMsg'].forEach(id=>{const f=$('#'+id),bad=!f.value.trim();f.parentElement.classList.toggle('err',bad);if(bad)ok=false});
+  if(!$('#fConsent').checked){ok=false;toast('Please tick the consent box to continue')}
+  else if(!ok)toast('Please complete the required fields');
+  if(!ok)return;
+  const v=id=>$('#'+id).value.trim();
+  const subject=`Consultation Enquiry: ${v('fService')} (${v('fName')})`;
+  const body=`Good day Muthagela Attorneys,\n\nI would like to book a consultation.\n\nName: ${v('fName')}\nPhone: ${v('fPhone')}\n${v('fEmail')?'Email: '+v('fEmail')+'\n':''}Service: ${v('fService')}\nPreferred contact: ${v('fContact')}\n${v('fDate')?'Preferred date: '+v('fDate')+'\n':''}\nMy matter:\n${v('fMsg')}\n\nKind regards,\n${v('fName')}`;
+  MSG={subject,body};openM($('#sendModal'));
+});
+const enc=encodeURIComponent;
+$$('[data-send]').forEach(b=>b.onclick=()=>{
+  const {subject,body}=MSG, ua=navigator.userAgent;
+  const web=`https://mail.google.com/mail/?view=cm&fs=1&to=${FIRM_EMAIL}&su=${enc(subject)}&body=${enc(body)}`;
+  const t=b.dataset.send;
+  if(t==='gmail'){
+    if(/iPhone|iPad|iPod/i.test(ua)){
+      const start=Date.now();location.href=`googlegmail://co?to=${FIRM_EMAIL}&subject=${enc(subject)}&body=${enc(body)}`;
+      setTimeout(()=>{if(!document.hidden&&Date.now()-start<2500)location.href=web},1400);
+    }else if(/Android/i.test(ua)){
+      location.href=`intent://co?to=${FIRM_EMAIL}&subject=${enc(subject)}&body=${enc(body)}#Intent;scheme=googlegmail;package=com.google.android.gm;S.browser_fallback_url=${enc(web)};end`;
+    }else window.open(web,'_blank','noopener');
+  }else if(t==='mail'){location.href=`mailto:${FIRM_EMAIL}?subject=${enc(subject)}&body=${enc(body)}`}
+  else if(t==='wa'){window.open(`https://wa.me/${WA}?text=${enc(subject+'\n\n'+body)}`,'_blank','noopener')}
+  else if(t==='copy'){navigator.clipboard?.writeText(`To: ${FIRM_EMAIL}\nSubject: ${subject}\n\n${body}`).then(()=>toast('Message copied to clipboard'));return}
+  closeM($('#sendModal'));toast('Opening… just tap Send');
+});
+$$('.field input,.field select,.field textarea').forEach(f=>f.addEventListener('input',()=>f.parentElement.classList.remove('err')));
+$('#yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
