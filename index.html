@@ -12,7 +12,7 @@
 <meta property="og:image" content="img/team-standing.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="icons.js"></script>
 <script>
   try{const t=localStorage.getItem('ma-theme');document.documentElement.dataset.theme=t||'dark'}catch(e){document.documentElement.dataset.theme='dark'}
@@ -345,6 +345,13 @@ footer a:hover{color:#fff}
 @keyframes ld{from{transform:translateX(-100%)}to{transform:translateX(260%)}}
 @keyframes lg{50%{transform:scale(1.06)}}
 
+
+/* contact section font */
+#contact,#contact h2,#contact h3,#contact input,#contact select,#contact textarea,#contact button,#contact label{font-family:Montserrat,Inter,sans-serif}
+#contact .sec-head h2{font-weight:700;letter-spacing:-.02em}
+#contact h3{font-weight:700;letter-spacing:-.01em;font-size:1.6rem}
+#contact .eyebrow{font-family:Montserrat,sans-serif;letter-spacing:.18em}
+#contact .ci a,#contact .ci span{font-weight:600}
 @media (max-width:1024px){
   .menu{display:none}.burger{display:grid}
   .about-grid,.faq-grid,.contact-grid,.band-grid{grid-template-columns:1fr;gap:3rem}
